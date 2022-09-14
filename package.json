@@ -1,0 +1,23 @@
+{
+  "name": "swag_labs_test",
+  "version": "1.0.0",
+  "description": "Web UI Tests for SwagLabs demo site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/big-meel/swag_labs_test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/big-meel/swag_labs_test/issues"
+  },
+  "homepage": "https://github.com/big-meel/swag_labs_test#readme",
+  "devDependencies": {
+    "cypress": "^10.8.0"
+  }
+}
