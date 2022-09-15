@@ -23,3 +23,27 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+Cypress.Commands.add('clickLoginError', (text) => {
+  cy.get('#login-button')
+      .click()
+    
+  cy.get('[data-test="error"]')
+    .should('have.text', text)
+})
+
+Cypress.Commands.add('clickLogin', () => {
+  cy.get('#login-button')
+    .click()
+})
+
+Cypress.Commands.add('validLogin', () => {
+  cy.get('[data-test="username"]')
+      .type('standard_user')
+
+    cy.get('[data-test="password"]')
+      .type('secret_sauce')
+
+    cy.clickLogin()
+})
