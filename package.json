@@ -4,7 +4,8 @@
   "description": "Web UI Tests for SwagLabs demo site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run",
+    "cypress": "npx cypress open"
   },
   "repository": {
     "type": "git",
